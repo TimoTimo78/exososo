@@ -2,9 +2,10 @@ import React, { useState } from "react";
 const LoginForm = () => {
   const [surname, setSurname] = useState("");
   const [firstname, setFirstname] = useState("");
-  const [dateofbirth, setDateofbirth] = useState("");
+  const [dateofbirth, setDateOfBirth] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [mobilephonenumber, setMobilePhoneNumber] = useState("");
   const handleLogin = (e) => {
     e.preventDefault();
   };
@@ -52,7 +53,21 @@ const LoginForm = () => {
           id="dateofbirth"
           placeholder="Enter your date of birth here"
           value={dateofbirth}
-          onChange={(e) => setDateofbirth(e.target.value)}
+          onChange={(e) => setDateOfBirth(e.target.value)}
+          required
+        />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="Mobile Phone Number" className="form-label">
+          Mobile Phone Number
+        </label>
+        <input
+          type="mobile phone number"
+          className="form-control"
+          id="mobile phone number"
+          placeholder="Enter your mobile phone number here"
+          value={mobilephonenumber}
+          onChange={(e) => setMobilePhoneNumber(e.target.value)}
           required
         />
       </div>
@@ -85,7 +100,6 @@ const LoginForm = () => {
             required
           />
         </div>
-
         <button type="submit" className="btn btn-primary">
           Sign up
         </button>
@@ -93,10 +107,10 @@ const LoginForm = () => {
         <br />
         <br />
         <br />
-        <br />
         <h4>Already have an account</h4>
         <button type="submit" className="btn btn-primary">
           Sign in
+          {/* <a href="./Sign in">Sign in</a> */}
         </button>
       </form>
     </div>
