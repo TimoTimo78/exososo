@@ -6,6 +6,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mobilephonenumber, setMobilePhoneNumber] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const handleLogin = (e) => {
     e.preventDefault();
   };
@@ -100,17 +101,30 @@ const LoginForm = () => {
             required
           />
         </div>
+        <div className="mb-3">
+          <label htmlFor="confirmPassword" className="form-label">
+            Confirm Password
+          </label>
+          <input
+            type="confirmPassword"
+            className="form-control"
+            id="confirmPassword"
+            placeholder="Confirm your password here"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+        </div>
         <button type="submit" className="btn btn-primary">
           Sign up
         </button>
         <br />
         <br />
+        <a href="Already have an account">Already have an account</a>
         <br />
-        <br />
-        <h4>Already have an account</h4>
         <button type="submit" className="btn btn-primary">
           Sign in
-          {/* <a href="./Sign in">Sign in</a> */}
+          <a href="./Sign in"></a>
         </button>
       </form>
     </div>

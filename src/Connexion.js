@@ -39,6 +39,7 @@ const ConnectForm = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+
           <br />
           <button type="submit" className="btn btn-primary">
             Sign in
