@@ -12,67 +12,67 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="container">
+    <div className="card">
       <br />
-      <h2>Registration</h2>
+      <h2>Inscription</h2>
       <br />
-      <div className="mb-3">
-        <label htmlFor="surname" className="form-label">
-          Surname
-        </label>
-        <input
-          type="surname"
-          className="form-control"
-          id="surname"
-          placeholder="Enter your surname here"
-          value={surname}
-          onChange={(e) => setSurname(e.target.value)}
-          required
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="firstname" className="form-label">
-          Firstname
-        </label>
-        <input
-          type="firstname"
-          className="form-control"
-          id="firstname"
-          placeholder="Enter your firstname here"
-          value={firstname}
-          onChange={(e) => setFirstname(e.target.value)}
-          required
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="dateofbirth" className="form-label">
-          Date of birth
-        </label>
-        <input
-          type="date of birth"
-          className="form-control"
-          id="dateofbirth"
-          placeholder="Enter your date of birth here"
-          value={dateofbirth}
-          onChange={(e) => setDateOfBirth(e.target.value)}
-          required
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="Mobile Phone Number" className="form-label">
-          Mobile Phone Number
-        </label>
-        <input
-          type="mobile phone number"
-          className="form-control"
-          id="mobile phone number"
-          placeholder="Enter your mobile phone number here"
-          value={mobilephonenumber}
-          onChange={(e) => setMobilePhoneNumber(e.target.value)}
-          required
-        />
-      </div>
       <form onSubmit={handleLogin}>
+        <div className="mb-3">
+          <label htmlFor="surname" className="form-label">
+            Surname
+          </label>
+          <input
+            type="surname"
+            className="form-control"
+            id="surname"
+            placeholder="Enter your surname here"
+            value={surname}
+            onChange={(e) => setSurname(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="firstname" className="form-label">
+            Firstname
+          </label>
+          <input
+            type="firstname"
+            className="form-control"
+            id="firstname"
+            placeholder="Enter your firstname here"
+            value={firstname}
+            onChange={(e) => setFirstname(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="dateofbirth" className="form-label">
+            Date of birth
+          </label>
+          <input
+            type="date of birth"
+            className="form-control"
+            id="dateofbirth"
+            placeholder="Enter your date of birth here"
+            value={dateofbirth}
+            onChange={(e) => setDateOfBirth(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="Mobile Phone Number" className="form-label">
+            Mobile Phone Number
+          </label>
+          <input
+            type="mobile phone number"
+            className="form-control"
+            id="mobile phone number"
+            placeholder="Enter your mobile phone number here"
+            value={mobilephonenumber}
+            onChange={(e) => setMobilePhoneNumber(e.target.value)}
+            required
+          />
+        </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             E-mail
@@ -124,7 +124,7 @@ const LoginForm = () => {
         <br />
         <button type="submit" className="btn btn-primary">
           Sign in
-          <a href="./Sign in"></a>
+          <a href="/signin">Déjà un compte ?</a>
         </button>
       </form>
     </div>

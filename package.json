@@ -16,8 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:unit":"react-scripts test",
-    "test:e2e":"npx cypress open",
+    "test:unit": "react-scripts test",
+    "test": "npx cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,6 +39,9 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^13.3.0"
+    "chai": "^4.3.10",
+    "cypress": "^13.3.0",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
   }
 }
